@@ -1,11 +1,17 @@
 <ion-view title="List" id="page3" class=" ">
     <ion-content padding="true" class="has-header">
-        <ion-list id="list-list4" class=" ">
-            <ion-item class="item-thumbnail-left  " id="list-list-item16">
-                <img src="img/1616_A04.jpg?1470397175">
-                <h2>Ennead Architects Makes Progress on New University of Michigan Biological Sciences Building</h2>
-                <p>www.archdaily.com</p>
-            </ion-item>
-        </ion-list>
+      <a  class="card mag-item"  ng-repeat="item in items track by item._id">
+        <div class="meta">
+          <div class="feed-name">{{item.feed}}</div>
+          <div class="diff">{{item.diff}} ago</div>
+        </div>
+            <div class="titles">
+              <div class="title">{{item.title}}</div>
+              <div class="desc">{{item.summary.length > 0 ? item.summary : item.description}}</div>
+            </div>
+            <div class="img-wrapper">
+              <img ng-src="{{item.image}}">
+            </div>
+        </a>
     </ion-content>
 </ion-view>

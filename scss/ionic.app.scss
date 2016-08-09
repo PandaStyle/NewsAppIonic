@@ -47,6 +47,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 @import "../www/lib/ionic/scss/ionic.scss";
 @import "./feed";
+@import "./mag";
 
 
 body.platform-android {
@@ -65,3 +66,22 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea
   padding: 0;
 }
 
+.meta {
+  float: left;
+  margin-top: 0;
+  padding-top: 0;
+
+  .feed-name {
+    float: left;
+    color: $red;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .diff {
+    float: left;
+    font-size: 14px;
+    color: $summary-color;
+    margin-left: 10px;
+  }
+}

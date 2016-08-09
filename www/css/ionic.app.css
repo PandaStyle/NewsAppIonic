@@ -9727,20 +9727,6 @@ a.button {
     border-radius: 0 !important; }
     .feed-item .item img {
       border-radius: 0; }
-  .feed-item .meta {
-    float: left;
-    margin-top: 0;
-    padding-top: 0; }
-    .feed-item .meta .feed-name {
-      float: left;
-      color: #DC8A8A;
-      font-size: 14px;
-      font-weight: 500; }
-    .feed-item .meta .diff {
-      float: left;
-      font-size: 14px;
-      color: #969696;
-      margin-left: 10px; }
   .feed-item .title {
     color: #444;
     font-family: "Playfair Display", serif;
@@ -9749,6 +9735,42 @@ a.button {
     line-height: 24px; }
   .feed-item .feed-desc {
     font-size: 14px; }
+
+.mag-item {
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  text-decoration: none;
+  padding: 20px; }
+  .mag-item .meta {
+    margin-bottom: 5px; }
+    .mag-item .meta .feed-name, .mag-item .meta .diff {
+      font-size: 12px; }
+  .mag-item .titles {
+    padding-right: 10px;
+    float: left;
+    width: calc(100% - 100px); }
+    .mag-item .titles .title {
+      color: #444;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      max-height: 46px;
+      overflow: hidden;
+      margin-bottom: 5px; }
+    .mag-item .titles .desc {
+      max-height: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 12px;
+      line-height: 16px;
+      color: #969696; }
+  .mag-item .img-wrapper {
+    float: left; }
+  .mag-item img {
+    width: 100px;
+    border-radius: 0; }
 
 body.platform-android {
   font-family: "Poppins", sans-serif; }
@@ -9761,3 +9783,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tab-item, input, button, 
 
 .padding {
   padding: 0; }
+
+.meta {
+  float: left;
+  margin-top: 0;
+  padding-top: 0; }
+  .meta .feed-name {
+    float: left;
+    color: #DC8A8A;
+    font-size: 14px;
+    font-weight: 500; }
+  .meta .diff {
+    float: left;
+    font-size: 14px;
+    color: #969696;
+    margin-left: 10px; }

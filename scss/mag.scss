@@ -1,0 +1,52 @@
+.mag-item {
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+
+  .meta {
+    margin-bottom: 5px;
+
+    .feed-name, .diff {
+      font-size: 12px;
+    }
+
+  }
+
+  .titles {
+    padding-right: 10px;
+    float: left;
+    width: calc(100% - 100px);
+
+    .title {
+      color: $black;
+      font-family: $heading-font-family;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      max-height: 46px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+
+    .desc {
+      max-height: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 12px;
+      line-height: 16px;
+      color: $summary-color;
+    }
+  }
+
+  .img-wrapper {
+    float: left;
+  }
+
+  img {
+      width: 100px;
+      border-radius: 0;
+  }
+
+}

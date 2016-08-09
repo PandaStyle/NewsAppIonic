@@ -18,25 +18,7 @@
     }
   }
 
-  .meta {
-    float: left;
-    margin-top: 0;
-    padding-top: 0;
 
-    .feed-name {
-      float: left;
-      color: $red;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .diff {
-      float: left;
-      font-size: 14px;
-      color: $summary-color;
-      margin-left: 10px;
-    }
-  }
 
   .title {
     color: $black;
