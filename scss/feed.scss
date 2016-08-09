@@ -1,0 +1,30 @@
+.feed-item {
+  .feed-logo {
+    float: left;
+    width: 40px;
+  }
+  .titles {
+    float: left;
+    margin-left: 10px;
+
+    .feed-name {
+      color: $red;
+    }
+
+    .diff {
+      font-size: 12px;
+      color: $summary-color;
+    }
+  }
+
+  .title {
+    font-family: $heading-font-family;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feed-desc {
+    font-size: 12px;
+  }
+}
