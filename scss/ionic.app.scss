@@ -9,6 +9,11 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 
+//default ionic overwrites
+$base-background-color: #f1f1f1;
+$content-padding: 10px;
+
+//from curatist
 $red: #DC8A8A;
 $black: #444;
 $summary-color: #969696;
@@ -54,5 +59,9 @@ body.platform-android {
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
   font-family: inherit;
+}
+
+.padding {
+  padding: 0;
 }
 

@@ -1,14 +1,6 @@
 <ion-view title="Feed" id="page2" class=" ">
     <ion-content padding="true" class="has-header">
-      <div class="list card feed-item" id="feed-card25" ng-repeat="item in items track by item._id">
-
-            <ion-item class="" id="feed-list-item9" >
-                <img class="feed-logo" src="https://pbs.twimg.com/profile_images/2445543900/arxyre3p6rp5l0kyvuw6.jpeg" alt="">
-                <div class="titles">
-                  <div class="feed-name">{{item.feed}}</div>
-                  <div class="diff">{{item.diff}} ago</div>
-                </div>
-            </ion-item>
+      <a ng-href="{{item.link}}" class="list card feed-item" id="feed-card25" ng-repeat="item in items track by item._id">
             <div class=" item item-image">
                 <img ng-src="{{item.image}}" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
             </div>
@@ -18,8 +10,10 @@
                   {{item.summary.length > 0 ? item.summary : item.description}}
                 </p>
             </div>
-            <ion-item class="item-icon-left  " id="feed-list-item10">
-                <i class="icon ion-share"></i>read more</ion-item>
-        </div>
+            <ion-item class="meta">
+              <div class="feed-name">{{item.feed}}</div>
+              <div class="diff">{{item.diff}} ago</div>
+            </ion-item>
+        </a>
     </ion-content>
 </ion-view>
